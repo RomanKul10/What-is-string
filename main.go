@@ -74,4 +74,16 @@ func main() {
 		fmt.Print(string(coursName[i]))
 	}
 
+	fmt.Println()
+
+	fmt.Println("Length of courseName is", len(coursName))
+
+	var mySlise []string
+	mySlise = append(mySlise, "one")
+	mySlise = append(mySlise, "two")
+	mySlise = append(mySlise, "three")
+
+	fmt.Println("mySlise has", len(mySlise), "elements")
+	fmt.Println("the last element mySlise is", mySlise[len(mySlise)-1])
+
 }
