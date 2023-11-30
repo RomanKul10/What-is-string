@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println()
+	/* fmt.Println()
 	name := "Hello world!"
 	fmt.Println("String:", name)
 	fmt.Println()
@@ -84,6 +84,29 @@ func main() {
 	mySlise = append(mySlise, "three")
 
 	fmt.Println("mySlise has", len(mySlise), "elements")
-	fmt.Println("the last element mySlise is", mySlise[len(mySlise)-1])
+	fmt.Println("the last element mySlise is", mySlise[len(mySlise)-1]) */
 
+	
+	//strings package
+	courses := []string{
+		"Learn Go for Beginners Crash Course"
+		"Learn Java for Beginners Crash Course"
+		"Learn Python for Beginners Crash Course"
+		"Learn C for Beginners Crash Course"
+	}
+
+	for _, x := rage course{
+		if strings.Contains(x, "Go") {
+			fmt.Println("Go is found in",x, "and index is", strings.Index(x,"Go"))
+		}
+	}
+
+	newString := "Go is a great programing language. Go for it"
+	fmt.Println(strings.HasPrefix(newString, "Go"))
+	fmt.Println(strings.HasPrefix(newString, "Python"))
+	fmt.Println(strings.HasSuffix(newString, "!"))
+	fmt.Println(strings.Count(newString, "Go"))
+	fmt.Println(strings.Count(newString, "Fish"))
+	fmt.Println(strings.Index(newString, "Python")) 
+	fmt.Println(strings.LastIndex(newString, "Go"))
 }
