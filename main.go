@@ -86,8 +86,7 @@ func main() {
 	fmt.Println("mySlise has", len(mySlise), "elements")
 	fmt.Println("the last element mySlise is", mySlise[len(mySlise)-1]) */
 
-	
-	//strings package
+	/* //strings package
 	courses := []string{
 		"Learn Go for Beginners Crash Course"
 		"Learn Java for Beginners Crash Course"
@@ -107,6 +106,34 @@ func main() {
 	fmt.Println(strings.HasSuffix(newString, "!"))
 	fmt.Println(strings.Count(newString, "Go"))
 	fmt.Println(strings.Count(newString, "Fish"))
-	fmt.Println(strings.Index(newString, "Python")) 
-	fmt.Println(strings.LastIndex(newString, "Go"))
+	fmt.Println(strings.Index(newString, "Python"))
+	fmt.Println(strings.LastIndex(newString, "Go"))*/
+
+	// string manipulation
+
+	newString := "Go is a great programing language. Go for it"
+
+	if strings.Contains(newString, "Go") {
+		newString = strings.ReplaceAll(newString, "Go", "Golang")
+		//newString = strings.Replace(newString, "Go", "Golang", 1)
+	}
+	fmt.Println(newString)
+
+	// string comparison -порівняння рядків
+	a := "A"
+	if a == "A" {
+		fmt.Println("a is equal to A")
+	}
+
+	if "A" > "B" {
+		fmt.Println("A is greater than B")
+	} else {
+		fmt.Println("A is not greater than B")
+	}
+
+	badEmail := " mee@here.com "
+	badEmail = strings.TrimSpace(badEmail)
+	fmt.Printf("=%s=", badEmail)
+	fmt.Println()
+
 }
