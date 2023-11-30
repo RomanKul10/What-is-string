@@ -58,4 +58,20 @@ func main() {
 	fmt.Println("Getting a substring")
 	fmt.Println(name[10:13])
 
+	//indexing
+
+	coursName := "Learn Go for Beginners Crash Course"
+
+	fmt.Println(coursName[0])         // number
+	fmt.Println(string(coursName[0])) //leter
+	fmt.Println(string(coursName[6]))
+
+	for i := 0; i <= 21; i++ {
+		fmt.Print(string(coursName[i]))
+	}
+	fmt.Println()
+	for i := 13; i <= 21; i++ {
+		fmt.Print(string(coursName[i]))
+	}
+
 }
